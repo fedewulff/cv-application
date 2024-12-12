@@ -1,22 +1,106 @@
 body {
   padding: 2rem;
   border: 1px solid red;
+  background: rgb(197, 196, 196);
 }
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-.cvApplication {
+.container {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  border: 1px solid red;
+  gap: 4rem;
+}
+.title {
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 5px #026c3d;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title > button {
+  background-color: #00522e;
+  border: none;
+  color: #f9f6ee;
+  font-size: 1.5rem;
+  margin-right: 1.25rem;
+
+  padding: 0.5rem;
 }
 .form {
+  padding: 1rem;
+}
+
+.allforms,
+.firstform,
+.secondform,
+form {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+  color: #f9f6ee;
+}
+.firstform,
+.secondform {
+  background: #00522e;
+  border-radius: 1rem;
 }
 input {
   display: block;
+  font-size: 1.25rem;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  border: none;
+  margin-top: 0.25rem;
+  background: #f9f6ee;
+  width: 100%;
+}
+.formbuttons {
+  padding: 0.5rem;
+  font-size: 1rem;
+  max-width: fit-content;
+  border-radius: 0.5rem;
+  margin-left: auto;
+  border: none;
+  margin-top: 0.5rem;
+}
+
+.mycvBlock,
+.mycv {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.mycv {
+  background: #f9f6ee;
+  border-radius: 1rem;
+
+  width: 600px;
+}
+.mycvtitle {
+  text-align: center;
+  background: #00522e;
+  color: #f9f6ee;
+  padding: 1rem;
+}
+.mycvBlock {
+  gap: 0.75rem;
+  padding: 0.5rem 0 0 1rem;
+}
+.mycvBlock .data {
+  padding-left: 1rem;
+}
+.mycvBlock > .data > div > div {
+  min-height: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.h1style {
+  font-size: 1.75rem;
+}
+.h2style {
+  font-size: 1.25rem;
 }
