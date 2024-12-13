@@ -1,8 +1,8 @@
 body {
-  padding: 2rem;
   background: rgb(197, 196, 196);
   display: flex;
   justify-content: center;
+  padding: 1rem;
 }
 * {
   box-sizing: border-box;
@@ -59,7 +59,8 @@ form {
   width: 45%;
 }
 
-input {
+input,
+textarea {
   display: block;
   font-size: 1.25rem;
   padding: 0.25rem;
@@ -69,22 +70,25 @@ input {
   background: #f9f6ee;
   width: 100%;
 }
+.buttons {
+  margin-left: auto;
+  display: flex;
+  gap: 1rem;
+}
 .formbuttons {
   padding: 0.5rem;
   font-size: 1rem;
   max-width: fit-content;
   border-radius: 0.5rem;
-  margin-left: auto;
+  color: #00522e;
   border: none;
   margin-top: 0.5rem;
 }
 
 .hideform {
   height: 0px;
-  padding: 0px;
+  padding: 0 1rem;
   overflow: hidden;
-  opacity: 0;
-  transition: 1s;
 }
 .showform {
   height: fit-content;
