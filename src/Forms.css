@@ -49,6 +49,9 @@ form {
   background: #00522e;
   border-radius: 1rem;
 }
+.form button {
+  background: #f9f6ee;
+}
 .dateinandout {
   display: flex;
   justify-content: space-between;
